@@ -1,3 +1,6 @@
+include("../DLX.jl")
+using DLX
+
 function test()
     ex = [1 0 0 0 1
           0 1 0 1 0
@@ -6,6 +9,7 @@ function test()
           1 0 0 1 1]
     f = (ri, ci) -> (ex[ri, ci] == 1)
     root = init(size(ex)..., f)
-    search(root)
-    return
+    return (search_root(root))
 end
+
+println(test())
