@@ -27,7 +27,7 @@ end
 ex::one_hot type with x and y arrays of strings and M matrix
 returns 
 """
-function solve_cover(ex::one_hot)::Array{Integer, 1}
+function solve_cover(ex::one_hot)
     f = (ri, ci) -> (ex.M[ri, ci] == 1)
     root = init(size(ex.M)..., f)
     return (search_root(root))
