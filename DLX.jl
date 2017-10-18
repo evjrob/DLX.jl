@@ -134,7 +134,7 @@ function init(nrows, ncols, is_constraint)
     root
 end
 
-function search_root(root)
+function search_root(root)::Array{Array{Integer, 1}, 1}
     results = Array{Array{Integer, 1}, 1}()
     rows = []
 
@@ -164,7 +164,6 @@ function search_root(root)
 
     return(results)
 end
-
     
 function cover(col)
     col.right.left = col.left
