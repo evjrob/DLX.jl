@@ -73,7 +73,7 @@ function push(head::ColumnHead, it)
     head.up.down = it
     it.up = head.up
     it.down = head
-    head.up = it      # modify this last
+    head.up = it
 end
 
 function push(head::Column, it)
