@@ -1,8 +1,10 @@
 module DLX
 
+include("one-hot.jl")
+
 import Base.*
 
-export search_root, init
+export search_root, init, solve_cover, get_cover, one_hot
 
 abstract type Left end
 abstract type Right end
