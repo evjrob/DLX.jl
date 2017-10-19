@@ -47,7 +47,7 @@ end
 
 # depending on the number of responses return one or multiple
 
-function get_cover(ex::one_hote,
+function get_cover(ex::one_hot,
                    sol::Array{Integer,1})::Array{Array{Array{String, 1}, 1}, 1}
     return ([[ex.y[i] for i in sol][1]])
 end
