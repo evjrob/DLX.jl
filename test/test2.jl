@@ -1,4 +1,4 @@
-include("../DLX.jl")
+include("../src/DLX.jl")
 using DLX
 
 function test()

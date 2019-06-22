@@ -1,4 +1,4 @@
-include("../DLX.jl")
+include("../src/DLX.jl")
 using DLX
 
 # in the case there is no solution without overlap

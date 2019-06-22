@@ -1,4 +1,4 @@
-include("../DLX.jl")
+include("../src/DLX.jl")
 using DLX
 
 ## in the case when there is no solution
